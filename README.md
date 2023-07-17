@@ -31,11 +31,11 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [✔] Create a `UseCase` base class to enforce a stable interface for all use cases
 
 ## Video 4: [Data Layer Overview & Models](https://resocoder.com/2019/09/09/flutter-tdd-clean-architecture-course-4-data-layer-overview-models/)
-- [ ] Learn about the data layer and its components: models, data sources, repositories
-- [ ] Create a data folder inside number_trivia with models subfolder
-- [ ] Create a NumberTriviaModel class that extends NumberTrivia entity
-- [ ] Implement toJson and fromJson methods for NumberTriviaModel
-- [ ] Write unit tests for NumberTriviaModel
+- [✔] Learn about the data layer and its components: models, data sources, repositories
+- [✔] Create a data folder inside number_trivia with models subfolder
+- [✔] Create a NumberTriviaModel class that extends NumberTrivia entity
+- [✔] Implement toJson and fromJson methods for NumberTriviaModel
+- [✔] Write unit tests for NumberTriviaModel
 
 ## Video 5: [Contracts of Data Sources](https://resocoder.com/2019/09/12/flutter-tdd-clean-architecture-course-5-contracts-of-data-sources/)
 - [ ] Learn about contracts of data sources and why they are useful
