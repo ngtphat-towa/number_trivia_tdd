@@ -1,16 +1,7 @@
 # number_trivia_tdd
 
-A new Flutter project.
+A  this  project is following (https://resocoder.com/category/tutorials/flutter/tdd-clean-architecture/) on Reso Coder.
 
-## Getting Started
+# Checklist
+### Video 1: [Explanation & Project Structure](https://www.youtube.com/watch?v=dc3B_mMrZ-Q)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
