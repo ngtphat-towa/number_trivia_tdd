@@ -76,19 +76,16 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [x] Write unit tests for remote data source using http_mock_adapter package
 
 ## Video 10: [Bloc Scaffolding & Input Conversion](https://resocoder.com/2019/10/10/flutter-tdd-clean-architecture-course-10-bloc-scaffolding-input-conversion/)
-- [ ] Learn about bloc scaffolding and input conversion in the presentation layer
-- [ ] Add dependencies for bloc, flutter_bloc, dartz, and equatable packages
-- [ ] Create a presentation folder inside number_trivia with bloc subfolder
-- [ ] Create number_trivia_event.dart, number_trivia_state.dart, and number_trivia_bloc.dart files inside bloc subfolder
-- [ ] Define abstract classes for NumberTriviaEvent and NumberTriviaState with equatable package
-- [ ] Define subclasses for NumberTriviaEvent: GetTriviaForConcreteNumber and GetTriviaForRandomNumber
-- [ ] Define subclasses for NumberTriviaState: Empty, Loading, Loaded, Error
-- [ ] Implement NumberTriviaBloc class that extends Bloc<NumberTriviaEvent, NumberTriviaState> with bloc package
-- [ ] Inject GetConcreteNumberTrivia and GetRandomNumberTrivia use cases as dependencies into bloc constructor
-- [ ] Override mapEventToState method to handle different events and emit different states using bloc methods
-- [ ] Create input_converter.dart file inside core folder with InputConverter class that converts a string to an unsigned integer or a failure
-- [ ] Inject InputConverter as a dependency into bloc constructor
-- [ ] Use InputConverter to validate and convert the input string before calling the use cases
+- [x] Learn about bloc scaffolding and input conversion in the presentation layer
+- [x] Generate a number_trivia bloc subfolder with bloc extension
+- [x] Define abstract classes for NumberTriviaEvent and NumberTriviaState with equatable package
+- [x] Define subclasses for NumberTriviaEvent: GetTriviaForConcreteNumber and GetTriviaForRandomNumber
+- [x] Define subclasses for NumberTriviaState: Empty, Loading, Loaded, Error
+- [x] Inject GetConcreteNumberTrivia and GetRandomNumberTrivia use cases as dependencies into bloc constructor
+- [x] Wire up on<Event> method to handle TriviaForConcreteNumber and GetTriviaForRandomNumber events
+- [x] Create input_converter.dart file inside core folder with InputConverter class that converts a string to an unsigned integer or a failure
+- [x] Inject InputConverter as a dependency into bloc constructor
+- [x] Use InputConverter to validate and convert the input string before calling the use cases
 
 ## Video 11: [UI & Bloc Implementation](https://resocoder.com/2019/10/17/flutter-tdd-clean-architecture-course-11-ui-bloc/)
 - [ ] Learn about UI and bloc implementation in the presentation layer
