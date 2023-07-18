@@ -67,13 +67,13 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [x] Write unit tests for local data source
 
 ## Video 9: [Remote Data Source](https://resocoder.com/2019/10/03/flutter-tdd-clean-architecture-course-9-remote-data-source/)
-- [ ] Learn about remote data source and how to use http package in Flutter
-- [ ] Add dependencies for http package and http_mock_adapter package
-- [ ] Implement NumberTriviaRemoteDataSourceImpl class that extends NumberTriviaRemoteDataSource abstract class from data sources contracts
-- [ ] Inject HttpClient as a dependency into remote data source constructor
-- [ ] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using http package methods and NumberTriviaModel.fromJson method
-- [ ] Handle exceptions and errors from http requests
-- [ ] Write unit tests for remote data source using http_mock_adapter package
+- [x] Learn about remote data source and how to use http package in Flutter
+- [x] Add dependencies for http package and http_mock_adapter package
+- [x] Implement NumberTriviaRemoteDataSourceImpl class that extends NumberTriviaRemoteDataSource abstract class from data sources contracts
+- [x] Inject HttpClient as a dependency into remote data source constructor
+- [x] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using http package methods and NumberTriviaModel.fromJson method
+- [x] Handle exceptions and errors from http requests
+- [x] Write unit tests for remote data source using http_mock_adapter package
 
 ## Video 10: [Bloc Scaffolding & Input Conversion](https://resocoder.com/2019/10/10/flutter-tdd-clean-architecture-course-10-bloc-scaffolding-input-conversion/)
 - [ ] Learn about bloc scaffolding and input conversion in the presentation layer
