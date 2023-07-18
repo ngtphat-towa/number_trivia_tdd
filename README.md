@@ -59,12 +59,12 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [x] Write unit tests for network info
 
 ## Video 8: [Local Data Source](https://resocoder.com/2019/09/26/flutter-tdd-clean-architecture-course-8-local-data-source/)
-- [ ] Learn about local data source and how to use shared preferences in Flutter
-- [ ] Add dependencies for shared_preferences package
-- [ ] Implement NumberTriviaLocalDataSourceImpl class that extends NumberTriviaLocalDataSource abstract class from data sources contracts
-- [ ] Inject SharedPreferences as a dependency into local data source constructor
-- [ ] Implement getLastNumberTrivia and cacheNumberTrivia methods using shared preferences methods
-- [ ] Write unit tests for local data source
+- [x] Learn about local data source and how to use shared preferences in Flutter
+- [x] Add dependencies for shared_preferences package
+- [x] Implement NumberTriviaLocalDataSourceImpl class that extends NumberTriviaLocalDataSource abstract class from data sources contracts
+- [x] Inject SharedPreferences as a dependency into local data source constructor
+- [x] Implement getLastNumberTrivia and cacheNumberTrivia methods using shared preferences methods
+- [x] Write unit tests for local data source
 
 ## Video 9: [Remote Data Source](https://resocoder.com/2019/10/03/flutter-tdd-clean-architecture-course-9-remote-data-source/)
 - [ ] Learn about remote data source and how to use http package in Flutter
