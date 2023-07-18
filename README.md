@@ -51,12 +51,12 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [✔] Write unit tests for repository implementation.
 
 ## Video 7: [Network Info](https://resocoder.com/2019/09/23/flutter-tdd-clean-architecture-course-7-network-info/)
-- [ ] Learn about network info and how to check internet connection status in Flutter
-- [ ] Add dependencies for connectivity package and mockito package
-- [ ] Create network_info.dart file inside core folder with NetworkInfo abstract class and NetworkInfoImpl class that implements it
-- [ ] Inject Connectivity as a dependency into NetworkInfoImpl constructor
-- [ ] Implement isConnected method using Connectivity package methods
-- [ ] Write unit tests for network info
+- [✔] Learn about network info and how to check internet connection status in Flutter
+- [✔] Add dependencies for connectivity package and mockito package
+- [✔] Create network_info.dart file inside core folder with NetworkInfo abstract class and NetworkInfoImpl class that implements it
+- [✔] Inject Connectivity as a dependency into NetworkInfoImpl constructor
+- [✔] Implement isConnected method using Connectivity package methods
+- [✔] Write unit tests for network info
 
 ## Video 8: [Local Data Source](https://resocoder.com/2019/09/26/flutter-tdd-clean-architecture-course-8-local-data-source/)
 - [ ] Learn about local data source and how to use shared preferences in Flutter

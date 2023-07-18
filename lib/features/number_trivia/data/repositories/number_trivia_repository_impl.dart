@@ -3,7 +3,7 @@ import 'package:number_trivia_tdd/core/error/failures.dart';
 import 'package:number_trivia_tdd/features/number_trivia/data/models/number_trivia_model.dart';
 
 import '../../../../core/error/exception.dart';
-import '../../../../core/platform/network_info.dart';
+import '../../../../core/network/network_info.dart';
 import '../../domain/entities/number_trivia.dart';
 import '../../domain/repositories/number_trivia_repository.dart';
 import '../datasources/number_trivia_local_data_source.dart';
