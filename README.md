@@ -44,11 +44,11 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [✔] Write unit tests for data sources contracts
 
 ## Video 6: [Repository Implementation](https://resocoder.com/2019/09/19/flutter-tdd-clean-architecture-course-6-repository-implementation/)
-- [✔] Learn about repository implementation and its role in the data layer
-- [✔] Implement NumberTriviaRepositoryImpl class that extends NumberTriviaRepository abstract class from domain layer
-- [✔] Inject local and remote data sources as dependencies into repository constructor
-- [✔] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using data sources and network info
-- [✔] Write unit tests for repository implementation
+- [✔] Learn about repository implementation and its role in the data layer.
+- [✔] Implement NumberTriviaRepositoryImpl class that extends NumberTriviaRepository abstract class from domain layer.
+- [✔] Inject local and remote data sources as dependencies into repository constructor.
+- [✔] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using data sources and network info.
+- [✔] Write unit tests for repository implementation.
 
 ## Video 7: [Network Info](https://resocoder.com/2019/09/23/flutter-tdd-clean-architecture-course-7-network-info/)
 - [ ] Learn about network info and how to check internet connection status in Flutter
