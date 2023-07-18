@@ -7,56 +7,56 @@
 This course teaches you how to build a Flutter app using Test Driven Development (TDD) and Clean Architecture principles. You will learn how to write testable and maintainable code, how to structure your app into layers of abstraction, and how to implement features such as caching, connectivity, and error handling.
 
 ## Video 1: [Explanation & Project Structure](https://resocoder.com/2019/08/27/flutter-tdd-clean-architecture-course-1-explanation-project-structure/)
-- [✔] Learn the core concepts of clean architecture and how it applies to Flutter
-- [✔] Create a Flutter project with clean_architecture_tdd_course as the name
-- [✔] Add dependencies for flutter_test, cupertino_icons, and pedantic
-- [✔] Add .gitignore file with rules for Flutter and Dart
-- [✔] Create a lib folder with main.dart file
-- [✔] Create a test folder with widget_test.dart file
-- [✔] Create folders for presentation, domain, and data layers inside lib
+- [x] Learn the core concepts of clean architecture and how it applies to Flutter
+- [x] Create a Flutter project with clean_architecture_tdd_course as the name
+- [x] Add dependencies for flutter_test, cupertino_icons, and pedantic
+- [x] Add .gitignore file with rules for Flutter and Dart
+- [x] Create a lib folder with main.dart file
+- [x] Create a test folder with widget_test.dart file
+- [x] Create folders for presentation, domain, and data layers inside lib
 
 ## Video 2: [Entities & Use Cases](https://resocoder.com/2019/08/29/flutter-tdd-clean-architecture-course-2-entities-use-cases/)
-- [✔] Create a core folder inside lib with error and usecases subfolders
-- [✔] Create a Failure class  in the core folder
-- [✔] Create an abstract UseCase class with a call method in the usecases subfolder
-- [✔] Create a features folder inside lib with number_trivia subfolder
-- [✔] Create a domain folder inside number_trivia with entities and usecases subfolders
-- [✔] Create a NumberTrivia class in the entities subfolder
-- [✔] Create abstract classes for NumberTriviaRepository, GetConcreteNumberTrivia, and GetRandomNumberTrivia in the usecases subfolder
+- [x] Create a core folder inside lib with error and usecases subfolders
+- [x] Create a Failure class  in the core folder
+- [x] Create an abstract UseCase class with a call method in the usecases subfolder
+- [x] Create a features folder inside lib with number_trivia subfolder
+- [x] Create a domain folder inside number_trivia with entities and usecases subfolders
+- [x] Create a NumberTrivia class in the entities subfolder
+- [x] Create abstract classes for NumberTriviaRepository, GetConcreteNumberTrivia, and GetRandomNumberTrivia in the usecases subfolder
 
 ## Video 3: [Domain Layer Refactoring](https://resocoder.com/2019/09/02/flutter-tdd-clean-architecture-course-3-domain-layer-refactoring/)
-- [✔] Learn about callable classes in Dart
-- [✔] Refactor the `GetConcreteNumberTrivia` class to use the `call` method
-- [✔] Add another use case: `GetRandomNumberTrivia`
-- [✔] Create a `UseCase` base class to enforce a stable interface for all use cases
+- [x] Learn about callable classes in Dart
+- [x] Refactor the `GetConcreteNumberTrivia` class to use the `call` method
+- [x] Add another use case: `GetRandomNumberTrivia`
+- [x] Create a `UseCase` base class to enforce a stable interface for all use cases
 
 ## Video 4: [Data Layer Overview & Models](https://resocoder.com/2019/09/09/flutter-tdd-clean-architecture-course-4-data-layer-overview-models/)
-- [✔] Learn about the data layer and its components: models, data sources, repositories
-- [✔] Create a data folder inside number_trivia with models subfolder
-- [✔] Create a NumberTriviaModel class that extends NumberTrivia entity
-- [✔] Implement toJson and fromJson methods for NumberTriviaModel
-- [✔] Write unit tests for NumberTriviaModel
+- [x] Learn about the data layer and its components: models, data sources, repositories
+- [x] Create a data folder inside number_trivia with models subfolder
+- [x] Create a NumberTriviaModel class that extends NumberTrivia entity
+- [x] Implement toJson and fromJson methods for NumberTriviaModel
+- [x] Write unit tests for NumberTriviaModel
 
 ## Video 5: [Contracts of Data Sources](https://resocoder.com/2019/09/12/flutter-tdd-clean-architecture-course-5-contracts-of-data-sources/)
-- [✔] Learn about contracts of data sources and why they are useful
-- [✔] Create data sources subfolder inside data with local_data_source.dart and remote_data_source.dart files
-- [✔] Define abstract classes for NumberTriviaLocalDataSource and NumberTriviaRemoteDataSource with methods for getting trivia by number or randomly
-- [✔] Write unit tests for data sources contracts
+- [x] Learn about contracts of data sources and why they are useful
+- [x] Create data sources subfolder inside data with local_data_source.dart and remote_data_source.dart files
+- [x] Define abstract classes for NumberTriviaLocalDataSource and NumberTriviaRemoteDataSource with methods for getting trivia by number or randomly
+- [x] Write unit tests for data sources contracts
 
 ## Video 6: [Repository Implementation](https://resocoder.com/2019/09/19/flutter-tdd-clean-architecture-course-6-repository-implementation/)
-- [✔] Learn about repository implementation and its role in the data layer.
-- [✔] Implement NumberTriviaRepositoryImpl class that extends NumberTriviaRepository abstract class from domain layer.
-- [✔] Inject local and remote data sources as dependencies into repository constructor.
-- [✔] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using data sources and network info.
-- [✔] Write unit tests for repository implementation.
+- [x] Learn about repository implementation and its role in the data layer.
+- [x] Implement NumberTriviaRepositoryImpl class that extends NumberTriviaRepository abstract class from domain layer.
+- [x] Inject local and remote data sources as dependencies into repository constructor.
+- [x] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using data sources and network info.
+- [x] Write unit tests for repository implementation.
 
 ## Video 7: [Network Info](https://resocoder.com/2019/09/23/flutter-tdd-clean-architecture-course-7-network-info/)
-- [✔] Learn about network info and how to check internet connection status in Flutter
-- [✔] Add dependencies for connectivity package and mockito package
-- [✔] Create network_info.dart file inside core folder with NetworkInfo abstract class and NetworkInfoImpl class that implements it
-- [✔] Inject Connectivity as a dependency into NetworkInfoImpl constructor
-- [✔] Implement isConnected method using Connectivity package methods
-- [✔] Write unit tests for network info
+- [x] Learn about network info and how to check internet connection status in Flutter
+- [x] Add dependencies for connectivity package and mockito package
+- [x] Create network_info.dart file inside core folder with NetworkInfo abstract class and NetworkInfoImpl class that implements it
+- [x] Inject Connectivity as a dependency into NetworkInfoImpl constructor
+- [x] Implement isConnected method using Connectivity package methods
+- [x] Write unit tests for network info
 
 ## Video 8: [Local Data Source](https://resocoder.com/2019/09/26/flutter-tdd-clean-architecture-course-8-local-data-source/)
 - [ ] Learn about local data source and how to use shared preferences in Flutter
