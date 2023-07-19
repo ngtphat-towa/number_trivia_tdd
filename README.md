@@ -102,14 +102,15 @@ This course teaches you how to build a Flutter app using Test Driven Development
 -[x] Handle failures and successes from use cases and emit appropriate states
 -[x] Write unit tests for bloc using blocTest function and expect states
 
-## Video 13: [Dependency Injection](https://resocoder.com/2019/11/07/flutter-tdd-clean-architecture-course-testing-the-ui/)
--[ ] Learn about dependency injection and how to use get_it package in Flutter
--[ ] Register all the classes and contracts as singletons or factories using GetIt methods
--[ ] Learn how to use flutter_bloc package to provide blocs and cubits to widgets
+## Video 13: [Dependency Injection](https://resocoder.com/2019/10/21/flutter-tdd-clean-architecture-course-13-dependency-injection-user-interface//)
+-[x] Learn about dependency injection and how to use get_it package in Flutter
+-[x] Register all the classes and contracts as singletons or factories using GetIt methods
+-[x] Inject DI into `main()` before running application.
+
+## Video 14: [Finishing the App](https://resocoder.com/2019/10/29/flutter-tdd-clean-architecture-course-14-user-interface/)
+-[ ] Learn how to use Placeholder widgets to design the UI layout 
 -[ ] Create NumberTriviaPage widget and use BlocProvider, BlocBuilder, and BlocListener widgets
 -[ ] Implement TriviaDisplay, MessageDisplay, LoadingWidget, TriviaControls widgets
-## Video 14: [Finishing the App](https://resocoder.com/2019/11/14/flutter-tdd-clean-architecture-course-finishing-the-app/)
--[ ] Learn how to use Placeholder widgets to design the UI layout 
 -[ ] Create NumberTriviaPage widget and use Scaffold, AppBar, and Column widgets 
 -[ ] Implement MessageDisplay, LoadingWidget, and TriviaDisplay widgets using Container, Text, CircularProgressIndicator, and SingleChildScrollView widgets 
 -[ ] Use MediaQuery to set the height of the widgets according to the screen size -[ ] Extract the widgets into their own files and use barrel files to simplify imports 
