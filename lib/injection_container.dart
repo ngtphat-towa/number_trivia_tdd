@@ -25,20 +25,22 @@ final sl = GetIt.instance;
 Future<void> init() async {
   //! Features - Number Trivia
   sl.registerFactory(() => NumberTriviaBloc(
-      getConcreteNumberTrivia: sl(),
-      getRandomNumberTrivia: sl(),
-      inputConverter: sl()));
+      getConcreteNumberTrivia: sl<GetConcreteNumberTrivia>(),
+      getRandomNumberTrivia: sl<GetRandomNumberTrivia>(),
+      inputConverter: sl<InputConverter>()));
 
   // Use cases
-  sl.registerLazySingleton(() => GetConcreteNumberTrivia(sl()));
-  sl.registerLazySingleton(() => GetRandomNumberTrivia(sl()));
+  sl.registerLazySingleton(
+      () => GetConcreteNumberTrivia(sl<NumberTriviaRepository>()));
+  sl.registerLazySingleton(
+      () => GetRandomNumberTrivia(sl<NumberTriviaRepository>()));
 
   // Repository
   sl.registerLazySingleton<NumberTriviaRepository>(
       () => NumberTriviaRepositoryImpl(
-            remoteDataSource: sl(),
-            localDataSource: sl(),
-            networkInfo: sl(),
+            remoteDataSource: sl<NumberTriviaRemoteDataSource>(),
+            localDataSource: sl<NumberTriviaLocalDataSource>(),
+            networkInfo: sl<NetworkInfo>(),
           ));
   // Data sources
   sl.registerLazySingleton<NumberTriviaRemoteDataSource>(
@@ -49,11 +51,14 @@ Future<void> init() async {
 
   //! Core
   sl.registerLazySingleton(() => InputConverter());
-  sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(sl()));
+  sl.registerLazySingleton<NetworkInfo>(
+      () => NetworkInfoImpl(sl<InternetConnectionChecker>()));
 
   //! External
   final sharedPreferences = await SharedPreferences.getInstance();
+  final httpClient = http.Client();
+  final internetConnectionChecker = InternetConnectionChecker();
   sl.registerLazySingleton(() => sharedPreferences);
-  sl.registerLazySingleton(() => http.Client());
-  sl.registerLazySingleton(() => InternetConnectionChecker());
+  sl.registerLazySingleton(() => httpClient);
+  sl.registerLazySingleton(() => internetConnectionChecker);
 }

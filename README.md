@@ -94,7 +94,7 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [x] Handle failures and successes from use cases and emit appropriate states
 - [x] Write unit tests for bloc using mocktail package
 
-## Video 12: [Bloc Implementation 2/2](https://resocoder.com/2019/10/14/flutter-tdd-clean-architecture-course-11-bloc-implementation-2-2//)
+## Video 12: [Bloc Implementation 2/2](https://resocoder.com/2019/10/14/flutter-tdd-clean-architecture-course-11-bloc-implementation-2-2/)
 - [x] Learn how to use bloc_test package to simplify bloc testing
 - [x] Refactor bloc tests using blocTest function and expect states
 - [x] Implement NumberTriviaCubit class that extends Cubit<NumberTriviaState> abstract class from presentation layer contracts
@@ -102,7 +102,7 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [x] Handle failures and successes from use cases and emit appropriate states
 - [x] Write unit tests for bloc using blocTest function and expect states
 
-## Video 13: [Dependency Injection](https://resocoder.com/2019/10/21/flutter-tdd-clean-architecture-course-13-dependency-injection-user-interface//)
+## Video 13: [Dependency Injection](https://resocoder.com/2019/10/21/flutter-tdd-clean-architecture-course-13-dependency-injection-user-interface/)
 - [x] Learn about dependency injection and how to use get_it package in Flutter
 - [x] Register all the classes and contracts as singletons or factories using GetIt methods
 - [x] Inject DI into `main()` before running application.
