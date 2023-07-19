@@ -32,25 +32,31 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
     on<GetTriviaForConcreteNumber>(_onGetTriviaForConcreteNumber);
     on<GetTriviaForRandomNumber>(_onGetTriviaForRandomNumber);
   }
-  // Convert input into int
-  // -> Get Data form Use case -
+
+  // Get data form usecase or
   // -> Return ouput or Exception Messages
   Future _onGetTriviaForConcreteNumber(
     GetTriviaForConcreteNumber event,
     Emitter<NumberTriviaState> emit,
   ) async {
     try {
-      // Convert the input form UI
+      // Take input from Event
       final inputEither =
           inputConverter.stringToUnsignedInteger(event.numberString);
-      // Throw `InvalidInputFailure` if input is invalid
+
+      // Convert the input to an unsigned integer
+      // or throw an InvalidInputFailure exception if the conversion fails -> Emit the Error state
       final integer = inputEither.getOrElse(() => throw InvalidInputFailure());
+
       // Emit state loading
       emit(NumberTriviaLoading());
+
       // Get data from usecase
       final failureOrTrivia =
           await getConcreteNumberTrivia(Params(number: integer));
-      // Checking the case
+
+      // Emit `Loaded` state if result was number trivia
+      // Otherwise emit `Error` state
       failureOrTrivia!.fold(
         (failure) => emit(
           NumberTriviaError(message: _mapFailureToMessage(failure)),
@@ -62,8 +68,6 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
     }
   }
 
-  // -> Get Data form Use case -
-  // -> Return ouput or Exception Messages
   Future _onGetTriviaForRandomNumber(
     GetTriviaForRandomNumber event,
     Emitter<NumberTriviaState> emit,
@@ -72,6 +76,9 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
     emit(NumberTriviaLoading());
     // Get data from usecase
     final failureOrTrivia = await getRandomNumberTrivia();
+
+    // Emit `Loaded` state if result was number trivia
+    // Otherwise emit `Error` state
     failureOrTrivia!.fold(
       (failure) {
         emit(NumberTriviaError(message: _mapFailureToMessage(failure)));
