@@ -95,18 +95,14 @@ This course teaches you how to build a Flutter app using Test Driven Development
 [x] Write unit tests for bloc using mocktail package
 
 ## Video 12: [Bloc Implementation 2/2](https://resocoder.com/2019/10/14/flutter-tdd-clean-architecture-course-11-bloc-implementation-2-2//)
--[ ] Learn how to use bloc_test package to simplify bloc testing
--[ ] Add dependency for bloc_test package
--[ ] Refactor bloc tests using blocTest function and expect states
--[ ] Learn how to use cubit_test package to test cubits
--[ ] Add dependency for cubit_test package
--[ ] Implement NumberTriviaCubit class that extends Cubit<NumberTriviaState> abstract class from presentation layer contracts
--[ ] Inject GetConcreteNumberTrivia and GetRandomNumberTrivia use cases as dependencies into cubit constructor
--[ ] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using use cases and InputConverter
--[ ] Handle failures and successes from use cases and emit appropriate states
--[ ] Write unit tests for cubit using cubitTest function and expect states
+-[x] Learn how to use bloc_test package to simplify bloc testing
+-[x] Refactor bloc tests using blocTest function and expect states
+-[x] Implement NumberTriviaCubit class that extends Cubit<NumberTriviaState> abstract class from presentation layer contracts
+-[x] Inject GetConcreteNumberTrivia and GetRandomNumberTrivia use cases as dependencies into cubit constructor
+-[x] Handle failures and successes from use cases and emit appropriate states
+-[x] Write unit tests for bloc using blocTest function and expect states
 
-## Video 13: [Testing the UI](https://resocoder.com/2019/11/07/flutter-tdd-clean-architecture-course-testing-the-ui/)
+## Video 13: [Dependency Injection](https://resocoder.com/2019/11/07/flutter-tdd-clean-architecture-course-testing-the-ui/)
 -[ ] Learn about dependency injection and how to use get_it package in Flutter
 -[ ] Register all the classes and contracts as singletons or factories using GetIt methods
 -[ ] Learn how to use flutter_bloc package to provide blocs and cubits to widgets
