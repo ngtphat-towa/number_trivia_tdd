@@ -108,16 +108,16 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [x] Inject DI into `main()` before running application.
 
 ## Video 14: [Finishing the App](https://resocoder.com/2019/10/29/flutter-tdd-clean-architecture-course-14-user-interface/)
-- [ ] Learn how to use Placeholder widgets to design the UI layout 
-- [ ] Create NumberTriviaPage widget and use BlocProvider, BlocBuilder, and BlocListener widgets
-- [ ] Implement TriviaDisplay, MessageDisplay, LoadingWidget, TriviaControls widgets
-- [ ] Create NumberTriviaPage widget and use Scaffold, AppBar, and Column widgets 
-- [ ] Implement MessageDisplay, LoadingWidget, and TriviaDisplay widgets using Container, Text, CircularProgressIndicator, and SingleChildScrollView widgets 
-- [ ] Use MediaQuery to set the height of the widgets according to the screen size
-- [ ] Extract the widgets into their own files and use barrel files to simplify imports 
-- [ ] Implement TriviaControls widget using TextField, RaisedButton, and BlocConsumer widgets 
-- [ ] Dispatch GetTriviaForConcreteNumber and GetTriviaForRandomNumber events from the TriviaControls widget 
-- [ ] Wrap the body of the Scaffold with a SingleChildScrollView to prevent overflow when the keyboard appears
+- [x] Learn how to use Placeholder widgets to design the UI layout 
+- [x] Create NumberTriviaPage widget and use BlocProvider, BlocBuilder, and BlocListener widgets
+- [x] Implement TriviaDisplay, MessageDisplay, LoadingWidget, TriviaControls widgets
+- [x] Create NumberTriviaPage widget and use Scaffold, AppBar, and Column widgets 
+- [x] Implement MessageDisplay, LoadingWidget, and TriviaDisplay widgets using Container, Text, CircularProgressIndicator, and SingleChildScrollView widgets 
+- [x] Use MediaQuery to set the height of the widgets according to the screen size
+- [x] Extract the widgets into their own files and use barrel files to simplify imports 
+- [x] Implement TriviaControls widget using TextField, RaisedButton, and BlocConsumer widgets 
+- [x] Dispatch GetTriviaForConcreteNumber and GetTriviaForRandomNumber events from the TriviaControls widget 
+- [x] Wrap the body of the Scaffold with a SingleChildScrollView to prevent overflow when the keyboard appears
 
 ## Conclusion
 This course teaches you how to build a Flutter app using Test Driven Development (TDD) and Clean Architecture principles. You will learn how to write testable and maintainable code, how to structure your app into layers of abstraction, and how to implement features such as caching, connectivity, and error handling. By following this course, you will be able to build high-quality Flutter apps that are easy to maintain and extend.
