@@ -87,37 +87,39 @@ This course teaches you how to build a Flutter app using Test Driven Development
 - [x] Inject InputConverter as a dependency into bloc constructor
 - [x] Use InputConverter to validate and convert the input string before calling the use cases
 
-## Video 11: [UI & Bloc Implementation](https://resocoder.com/2019/10/17/flutter-tdd-clean-architecture-course-11-ui-bloc/)
-- [ ] Learn about UI and bloc implementation in the presentation layer
-- [ ] Create widgets subfolder inside presentation with message_display.dart, trivia_display.dart, trivia_controls.dart, and loading_widget.dart files
-- [ ] Implement MessageDisplay widget that displays a message on the screen using Text widget
-- [ ] Implement TriviaDisplay widget that displays a trivia on the screen using Text widgets and CircleAvatar widget
-- [ ] Implement TriviaControls widget that displays controls for getting trivia by number or randomly using TextField widget, RaisedButton widgets, and IconButton widget
-- [ ] Implement LoadingWidget widget that displays a loading indicator on the screen using CircularProgressIndicator widget
-- [ ] Create number_trivia_page.dart file inside presentation with NumberTriviaPage widget that displays the app's main screen using Scaffold widget, BlocProvider widget, BlocBuilder widget, and BlocListener widget
-- [ ] Use the widgets from widgets subfolder to build the UI of the app according to the design
-- [ ] Use the bloc from bloc subfolder to handle the events and states of the app logic
+## Video 11 : [Bloc Implementation 1/2](https://resocoder.com/2019/10/10/flutter-tdd-clean-architecture-course-11-bloc-implementation/)
+[x] Implement NumberTriviaBloc class that extends Bloc<NumberTriviaEvent, NumberTriviaState> abstract class from presentation layer contracts
+[x] Inject GetConcreteNumberTrivia and GetRandomNumberTrivia use cases as dependencies into bloc constructor
+[x] Implement on<GetTriviaForConcreteNumber> and on<GetTriviaForRandomNumber> methods using use cases and InputConverter
+[x] Handle failures and successes from use cases and emit appropriate states
+[x] Write unit tests for bloc using mocktail package
 
-## Video 12: [Dependency Injection](https://resocoder.com/2019/10/24/flutter-tdd-clean-architecture-course-dependency-injection/)
-- [ ] Learn about dependency injection and how to use get_it package in Flutter
-- [ ] Add dependencies for get_it package and injectable package
-- [ ] Create injection.dart file inside injection folder with init method that registers all the dependencies using get_it methods
-- [ ] Use injectable package annotations to mark classes for dependency injection such as @lazySingleton, @injectable, @module etc.
-- [ ] Use injectable package code generator to generate injection.config.dart file that contains the registration logic for all the dependencies marked with annotations
-- [ ] Call init method from injection.dart file in main.dart file before running the app
+## Video 12: [Bloc Implementation 2/2](https://resocoder.com/2019/10/14/flutter-tdd-clean-architecture-course-11-bloc-implementation-2-2//)
+-[ ] Learn how to use bloc_test package to simplify bloc testing
+-[ ] Add dependency for bloc_test package
+-[ ] Refactor bloc tests using blocTest function and expect states
+-[ ] Learn how to use cubit_test package to test cubits
+-[ ] Add dependency for cubit_test package
+-[ ] Implement NumberTriviaCubit class that extends Cubit<NumberTriviaState> abstract class from presentation layer contracts
+-[ ] Inject GetConcreteNumberTrivia and GetRandomNumberTrivia use cases as dependencies into cubit constructor
+-[ ] Implement getConcreteNumberTrivia and getRandomNumberTrivia methods using use cases and InputConverter
+-[ ] Handle failures and successes from use cases and emit appropriate states
+-[ ] Write unit tests for cubit using cubitTest function and expect states
 
 ## Video 13: [Testing the UI](https://resocoder.com/2019/11/07/flutter-tdd-clean-architecture-course-testing-the-ui/)
-- [ ] Learn about testing the UI and how to use flutter_test package in Flutter
-- [ ] Create number_trivia_page_test.dart file inside test/presentation with tests for NumberTriviaPage widget
-- [ ] Use flutter_test package methods such as testWidgets, pumpWidget, find, and expect to write widget tests
-- [ ] Use mockito package methods such as mock, when, and verify to mock the dependencies of NumberTriviaPage widget
-- [ ] Test the initial state of the widget and its behavior when interacting with it
-
+-[ ] Learn about dependency injection and how to use get_it package in Flutter
+-[ ] Register all the classes and contracts as singletons or factories using GetIt methods
+-[ ] Learn how to use flutter_bloc package to provide blocs and cubits to widgets
+-[ ] Create NumberTriviaPage widget and use BlocProvider, BlocBuilder, and BlocListener widgets
+-[ ] Implement TriviaDisplay, MessageDisplay, LoadingWidget, TriviaControls widgets
 ## Video 14: [Finishing the App](https://resocoder.com/2019/11/14/flutter-tdd-clean-architecture-course-finishing-the-app/)
-- [ ] Learn about finishing the app and how to handle edge cases and errors
-- [ ] Add more tests to number_trivia_page_test.dart file to cover all the edge cases and errors
-- [ ] Refactor the code to handle edge cases and errors properly
-- [ ] Test the app manually on an emulator or device to make sure everything works as expected
+-[ ] Learn how to use Placeholder widgets to design the UI layout 
+-[ ] Create NumberTriviaPage widget and use Scaffold, AppBar, and Column widgets 
+-[ ] Implement MessageDisplay, LoadingWidget, and TriviaDisplay widgets using Container, Text, CircularProgressIndicator, and SingleChildScrollView widgets 
+-[ ] Use MediaQuery to set the height of the widgets according to the screen size -[ ] Extract the widgets into their own files and use barrel files to simplify imports 
+-[ ] Implement TriviaControls widget using TextField, RaisedButton, and BlocConsumer widgets 
+-[ ] Dispatch GetTriviaForConcreteNumber and GetTriviaForRandomNumber events from the TriviaControls widget 
+-[ ] Wrap the body of the Scaffold with a SingleChildScrollView to prevent overflow when the keyboard appears
 
 ## Conclusion
 This course teaches you how to build a Flutter app using Test Driven Development (TDD) and Clean Architecture principles. You will learn how to write testable and maintainable code, how to structure your app into layers of abstraction, and how to implement features such as caching, connectivity, and error handling. By following this course, you will be able to build high-quality Flutter apps that are easy to maintain and extend.
